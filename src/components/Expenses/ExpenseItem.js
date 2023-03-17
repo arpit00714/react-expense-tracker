@@ -5,6 +5,11 @@ import Card from '../UI/Card';
 import ExpenseDate from './ExpenseDate';
 
 function ExpenseItem(props){
+
+    const ClickHandler = (e) => {
+       // console.log('clicked!!!!');
+       e.target.parentElement.style.display = "none";
+    }
     
     return (
     <Card className="expense-item">
@@ -15,6 +20,7 @@ function ExpenseItem(props){
         <h3> {props.location}</h3>
         <div className="expense-item__price">{props.amount}</div>
         </div>
+        <button onClick={ClickHandler}>Delete Expense</button>      {/*onClick use to what happen on click */}
     </Card>
     );
 } 
