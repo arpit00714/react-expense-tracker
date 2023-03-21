@@ -15,7 +15,7 @@ const ExpensesFilter = (props) => {
                     <option value="2021">2021</option>
                     <option value="2000">2000</option>
                     <option value="1999">1999</option>
-                    <option value="1998">1998</option>
+                    
                 </select>
             </div>
 
